@@ -1,0 +1,12 @@
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+}
+
+.card-header-title {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+}
