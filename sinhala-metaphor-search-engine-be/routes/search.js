@@ -42,14 +42,14 @@ router.post('/', async function (req, res) {
             // Increase field scores based on stemwords
             stemwords.writer_en.forEach(stemword => {
                 if (word.includes(stemword)) {
-                    word.replace(stemword, "");
+                    word = word.replace(stemword, "");
                     writer_en += 1;
                 }
             })
 
             stemwords.artist_en.forEach(stemword => {
                 if (word.includes(stemword)) {
-                    word.replace(stemword, "");
+                    word = word.replace(stemword, "");
                     artist_en += 1;
                 }
             })
@@ -94,14 +94,14 @@ router.post('/', async function (req, res) {
             // Increase the field scores based on stemwords
             stemwords.writer_si.forEach(stemword => {
                 if (word.includes(stemword)) {
-                    word.replace(stemword, "");
+                    word = word.replace(stemword, "");
                     writer_si += 1;
                 }
             })
 
             stemwords.artist_si.forEach(stemword => {
                 if (word.includes(stemword)) {
-                    word.replace(stemword, "");
+                    word = word.replace(stemword, "");
                     artist_si += 1;
                 }
             })
